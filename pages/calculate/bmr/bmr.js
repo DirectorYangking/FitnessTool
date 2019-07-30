@@ -3,6 +3,7 @@ Page({
   data: {
     array: ['男', '女'],
     array2: ['不计算 x1', '几乎不动 x1.2', '1-3次运动 x1.375', '3-5次运动 x1.55', '6-7次运动 x1.725','专业运动 x1.9'],
+    // array2: ['不计算', '几乎不动', '1-3次运动', '3-5次运动', '6-7次运动', '专业运动'],
     index: 0,
     index2:0,
     bmr: 0,
@@ -38,7 +39,8 @@ Page({
       return false;
     }
     if(this.data.index == 0){
-      bmr = 66 + (13.7 * weight) + (5 * height) - (6.8 * age)}
+      bmr = 66 + (13.7 * weight) + (5 * height) - (6.8 * age)
+      }
       else {
         bmr = 655 + (9.6 * weight) + (1.8 * height) - (4.7 * age)
       }

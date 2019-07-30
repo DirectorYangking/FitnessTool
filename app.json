@@ -4,11 +4,12 @@
     "pages/calculate/bmr/bmr",
     "pages/tools/time/time",
     "pages/tools/tools",
-    "pages/calculate/distribution/distribution"
+    "pages/calculate/distribution/distribution",
+    "pages/calculate/bmr2/bmr2"
   ],
   "window": {
     "backgroundTextStyle": "black",
-    "navigationBarBackgroundColor": "#F8F8F8",
+    "navigationBarBackgroundColor": "#66CCCC",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
   },
@@ -19,13 +20,13 @@
     "backgroundColor": "#ffffff",
     "list": [
       {
-        "pagePath": "pages/calculate/calculate",
+        "pagePath": "pages/tools/time/time",
         "iconPath": "image/icon_component.png",
         "selectedIconPath": "image/icon_component_HL.png",
         "text": "计算"
       },
       {
-        "pagePath": "pages/tools/tools",
+        "pagePath": "pages/tools/time/time",
         "iconPath": "image/icon_API.png",
         "selectedIconPath": "image/icon_API_HL.png",
         "text": "工具"

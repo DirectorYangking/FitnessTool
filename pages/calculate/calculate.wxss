@@ -1,5 +1,6 @@
 /* pages/calculate/calculate.wxss */
 button{
+  background: chartreuse;
   margin-top: 30rpx;
   margin-bottom: 30rpx;
 }
@@ -9,4 +10,30 @@ button{
 }
 .mini-btn{
   margin-right: 10rpx;
+}
+.bg{
+  display: flex;
+  flex-direction:column;
+}
+.fr{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400rpx;
+  background: #66CCCC;
+}
+.se{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400rpx;
+  background: #FFFFFF;
+}
+.bt1{
+  color: #66CCCC;
+  font-size: 80rpx;
+}
+.bt2{
+  color: #FFFFFF;
+  font-size: 80rpx;
 }

@@ -1,0 +1,63 @@
+<!--pages/calculate/bmr2/bmr2.wxml-->
+<view class='bmr_bg'>
+	<view class='bmr_title'>
+	BMR(Basel Metabolic Rate)人维持基本生理机能的最低热量值，以下根据美国运动协会给出的公式计算
+	</view>
+	<form bindsubmit="formSubmit">
+    <view class="table">
+        <view class="tr">
+              <view class="td">性    别</view>
+				<!-- <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}"> -->
+				<!-- <view class='bmr_input'>{{array[index]}}</view> 
+				</picker> -->
+              <radio-group class='tr' bindchange="radioChange">
+                  <view class='tr sex'>
+                    <view >
+                      <radio value="0" checked="true"/>
+                    </view>
+                    <view >男</view>
+                  </view>
+                  <view class='tr'>
+                    <view >
+                      <radio value="1"/>
+                    </view>
+                    <view >女</view>
+                  </view>
+              </radio-group>
+        </view>
+
+        <view class="tr">
+               <view class="td">年    龄</view>
+               <view class="td"><input type="number" name="age" value='{{form.age}}' placeholder="请输入年龄"  auto-focus />
+			   </view>      
+               <view class="td">岁</view>
+        </view>
+  
+        <view class="tr">
+               <view class="td">身    高</view>
+               <view class="td"><input type="number" name="height" value='{{form.height}}' placeholder="请输入身高"  /></view>
+			   <view class="td">cm</view>
+        </view>
+         
+        <view class="tr">
+              <view class="td">体    重</view>
+              <view class="td"><input type="number" name="weight" value='{{form.weight}}' placeholder="请输入体重"  /></view>
+              <view class="td"><text >kg</text></view>
+        </view>
+
+        <view class="tr">
+              <view class="td">活动系数</view>
+              <view class="td">
+               <picker bindchange="bindPickerChange" value="{{index2}}" range="{{array2}}">
+			   <view class='bmr_input'>{{array2[index2]}}</view>
+               </picker>
+              </view>      
+               <view class="td">  </view>
+        </view>
+        <view>
+              <button type="primary" form-type="submit">计算</button>
+        </view>
+	</view>
+	</form>
+    <view class="bmr_resule">你的BMR为--{{ bmrDTO }}大卡</view>
+</view>

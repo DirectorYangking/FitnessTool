@@ -1,0 +1,18 @@
+/* pages/calculate/bmr2/bmr2.wxss */
+.bmr_bg{
+  /* margin-left: 100rpx;
+  margin-right: 100rpx; */
+  margin: 50rpx;
+}
+.table{
+  margin: 20rpx;
+}
+.tr{
+  display: flex;
+}
+.td{
+  width: 200rpx;
+}
+.sex{
+  margin-right: 20rpx;
+}

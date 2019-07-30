@@ -13,10 +13,10 @@
            <view class="table">
                <view class="tr">
               <view class="td"> <text >性    别</text></view>
-               <view class="td">
+              <view class="td">
                <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
-              <view class='bmr_input'>{{array[index]}}</view>
-              </picker>
+               <view class='bmr_input'>{{array[index]}}</view>
+               </picker>
               </view>      
                <view class="td"> <text >sex</text></view>
              </view>

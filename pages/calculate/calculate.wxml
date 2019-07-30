@@ -1,13 +1,14 @@
 <!--pages/calculate/calculate.wxml-->
-<view class="container">
-  <view class="page-body">
-    <view class="btn-area">
-      <button id="bmr" bindtap="bmr" type="primary">BMR计算 </button>
+<view class="bg">
+    <view class="fr" id="bmr" bindtap="bmr">
+      <view class="bt2" >BMR计算</view>
     </view>
-    <view class="btn-area">
-      <button id="distribution" bindtap="distribution" type="primary">热量分配 </button>
+    <view class="se" id="bmr2" bindtap="bmr2">
+      <view class="bt1">BMR计算2 </view>
     </view>
-  </view>
-  
+    <view class="fr" id="distribution" bindtap="distribution">
+      <view class="bt2" >热量分配 </view>
+    </view>
+    
 </view>
 
